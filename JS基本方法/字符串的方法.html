@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//转换为字符串
+let number1=110;
+console.log(typeof(number1));
+let string1=number1.toString();
+console.log(typeof(string1));
+//隐式转换为字符串
+let  number2=120;
+let string2=number2+"";
+console.log(typeof(string2))
+
+//查找指定索引的字符
+let string3="hello world"
+console.log(string3.charAt(1))
+
+//查找指定索引字符的对应编码
+console.log(string3.charCodeAt(1))
+
+//拼接字符串
+console.log(string3.concat(" javascript"))
+
+//切取字符串的三种方法
+//slice substring substr
+//let string3="hello world"
+console.log(string3.length)
+console.log(string3.slice(0));  //一直切取到最后
+console.log(string3.slice(0,4)); //顾头不顾尾
+console.log(string3.slice(-11,-5)); //第一项和第二项一样负数加总长度
+
+
+console.log(string3.substr(0)); //一直切取到最后
+console.log(string3.substr(0,5));//顾索引0开始取后面的5个数的长度
+console.log(string3.substr(-11));//第一项遇见负数负数加总长度
+console.log(string3.substr(-11,-1));//第一项遇见负数负数加总长度,第二项遇见负数转为0
+
+
+console.log(string3.substring(0));//一直切取到最后
+console.log(string3.substring(0,4)); //顾头不顾尾                               
+console.log(string3.substring(-11));//第一项遇见负数转为0
+console.log(string3.substring(-11,-1));//第一项遇见负数转为0,第二项遇见负数转为0
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -10,8 +10,26 @@
     <script>
         let arr=[1,2,3,4,5,6,7,8,9];
         for(let i=0; i<arr.length; i++){
-            console.log(i)
+           // console.log(i); //打印索引
+            console.log(arr[i]);//打印值
         }
+
+        let arr2=["我","会","加","油","的"];
+        for(let i in arr2){
+            //console.log(i)  //打印索引
+            console.log(arr2[i])//打印值
+        }
+
+        let arr3=["我","会","成","功","的"]
+        for(let i of arr3){
+            console.log(i)//打印值
+        }
+
+
+        let arr4=["加油","奋斗","努力"];
+        arr4.forEach(i=> {
+            console.log(i)//打印值
+        });
 
 
         

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //if语句
+let a=10,b=5;
+if(a>b){
+    console.log("这就对了")
+}else if(b>a){
+    console.log("我看你有毛病")
+}else{
+    console.log("你不知道吗")
+}
+
+
+//求1-100的和 for循环
+let sum=null;
+for(let i=0; i<=100;i++){
+    sum+=i;
+}
+console.log(sum)
+
+
+
+//求1-10的和  while循环
+let i=0;
+let sum2=null;
+while (i<10) {
+i++;
+sum2+=i
+}
+console.log(sum2)
+
+
+
+//do-while循环
+let i3 = 0
+do{
+document.write( i3 + "<br>")
+i3++
+}
+while (i3 <= 5) 
+console.log(i3)
+
+
+
+
+
+//三目运算符
+let istrue=5>1 ? "真的":"假的";
+console.log(istrue)
+
+
+
+//switch语句
+switch(5-4){
+    case 1:
+    console.log("他就是1");
+    break;
+    case 2:
+    console.log("他就是2");
+    break;
+    case 3:
+    console.log("他就是3");
+    break;
+    default:
+    console.log("他什么都不是")
+}
+
+
+//and 
+let a1=1,a2=2,a3=3,a4=4,a5=5;
+if(a1+a4===5&&a2+a3===5){
+    console.log("真的耶")
+}
+
+//or
+if(a5>a4 || a4>a5){
+    console.log("不管谁大都正确")
+}
+
+//not 
+let bb=true;
+console.log(!bb)
+    </script>
+</body>
+</html>
