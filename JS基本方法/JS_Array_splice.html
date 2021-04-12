@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,2,3,4,5,6,7,8,9,0];
+        //删除
+        console.log(arr.splice(1,9));  //打印出来的是删除的对象
+        console.log(arr)               //响应式发生改变
+         
+
+         //替换
+        let arr1=[1,2,3,4,5,6,7,8,9,0];
+        console.log(arr1.splice(1,1,"替换")); //打印出来的是替换的对象
+        console.log(arr1);                     //响应式发生改变
+
+
+        //插入
+        let arr2=[1,2,3,4,5,6,7,8,9,0];
+        console.log(arr2.splice(9,0,"插入"));
+        console.log(arr2);       //响应式发生改变
+
+
+    </script>
+</body>
+</html>

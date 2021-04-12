@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numberarr="666.666";
+        let numberarr2=10.5;
+        let numberarr3=10;
+        console.log(Number(numberarr));    //转换成数值类型
+        console.log(parseInt(numberarr));  //取整（number类型）
+
+        let  isparseFloat=parseFloat(numberarr);
+        console.log(typeof(isparseFloat));   //number
+        console.log(parseFloat(numberarr));//转换为浮点型
+
+
+        let isnumber=numberarr2.toFixed(1);
+        console.log(typeof(isnumber));     //string
+        console.log(numberarr2.toFixed(1));//保留一位小数
+
+
+        console.log(Number.isInteger(numberarr3));//判断一个数值是否为整数
+
+    </script>
+</body>
+</html>

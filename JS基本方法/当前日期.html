@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+let myDate= new Date();
+/*console.log(myDate.getFullYear());
+console.log(myDate.getMonth()+1);//0-11
+console.log(myDate.getDate());
+console.log(myDate.getDay());//0-6
+console.log(myDate.getHours());//0-23
+console.log(myDate.getMinutes());//0-59
+console.log(myDate.getSeconds());//0-59
+console.log(myDate.toLocaleString());
+console.log(myDate.toLocaleDateString());
+console.log(myDate.toLocaleTimeString())*/
+let year=myDate.getFullYear()+"年";
+let month=myDate.getMonth()+1+"月";
+let dtat=myDate.getDate()+"日";
+let Day=myDate.getDay();
+let day=["星期一","星期二","星期三","星期四","星期五","星期六","星期日",]
+let myday=day[Day];
+let Hours=myDate.getHours();
+let myhours=Hours>12?("  P.M"+(Hours-12)):("  A.M"+Hours);
+if(Hours=0){
+    Hours=12 
+};
+let Minutes=myDate.getMinutes();
+let myminuted=Minutes>10?(":"+Minutes):(":0"+Minutes);
+let Seconds=myDate.getSeconds();
+let mySeconds=Seconds>10?(":"+Seconds):(":0"+Seconds);
+let jt="今天是"+year+month+dtat+myday+myhours+myminuted+mySeconds;
+console.log(jt)
+
+
+    </script>
+</body>
+</html>
