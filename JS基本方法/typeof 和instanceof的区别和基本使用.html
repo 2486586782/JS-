@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(typeof(1));
+       console.log(typeof(true));
+       console.log(typeof("a"));
+       console.log(typeof(undefined))
+       //判断基本数据的类型   比如String Number Boolean undefined
+
+       console.log(typeof(null)); //返回object
+       console.log(typeof({}));   //返回object
+       console.log(typeof([]));    //返回object
+       function abc(){
+           console.log("abc")
+       }
+       console.log(typeof(abc))   //返回的是function
+
+
+
+       //instanceof返回true,false判断引用数据类型
+       let arr=[];
+       let obj={};
+       console.log(arr instanceof Array);
+       console.log(obj instanceof Object);
+
+
+       //判断是否是数组的方法
+       if(Array.isArray(arr)===true ){
+          console.log("我是一个数组")
+       }
+    </script>
+</body>
+</html>
