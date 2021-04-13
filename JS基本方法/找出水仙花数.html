@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//153 = 13 + 53 + 33
+ var str = ""; 
+        for (var i = 100; i < 1000; i++){
+            let a = i % 10;             //提取个位数
+            let b = (i / 10) % 10       //提取十位数
+            b = parseInt(b);            //舍弃小数部分
+            var c = i / 100;            //提取百位数
+            c = parseInt(c);            //舍弃小数部分
+            if (i == (a * a * a + b * b * b + c * c * c)) {
+                str = str + i + "、";
+            }
+         }
+         document.write("水仙花数有：" + str);
+    </script>
+</body>
+</html>

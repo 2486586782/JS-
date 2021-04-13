@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*对于普通年，如果能被4整除，且不能被100整除的是闰年。
+对于世纪年，能被400整除的是闰年。*/
+
+function isyear(year){
+
+    if(year%4===0&&year%100!==0&&year%400===0){
+        console.log("他是闰年")
+    }else{
+        console.log("他不是闰年")
+    }
+}
+
+isyear(2021);
+isyear(2022);
+isyear(2023);
+isyear(2024);
+isyear(2025);
+isyear(2026);
+isyear(2027);
+isyear(2028);
+isyear(2029);
+isyear(2030);
+
+    </script>
+</body>
+</html>
