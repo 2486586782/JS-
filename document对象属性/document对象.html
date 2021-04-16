@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+</head>
+<body>
+    <script>
+        console.log(document.title) // 	获取文档的title
+        console.log(document.body)  //   	获取文档的body
+
+
+
+        console.log(document.forms)  //    	获取所有form元素
+        console.log(document.images)  //     	获取所有img元素
+        console.log(document.links)  //      获取所有a元素
+//等价于：    document.getElementsByTagName("form")
+             //document.getElementsByTagName("img")
+             //document.getElementsByTagName("a")
+
+
+
+        console.log(document.cookie)  //    文档的cookie
+        console.log(document.URL)  //     当前文档的URL
+        console.log(document.referrer)  //返回使浏览者到达当前文档的URL
+        /*属性来获取用户在访问当前页面之前所在页面的地址。
+        例如我从页面A的某个链接进入页面B，如果在页面B中使用document.referrer，
+        就可以获取到页面A的地址。*/
+       
+    </script>
+</body>
+</html>

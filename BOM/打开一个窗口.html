@@ -7,12 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="btn1">打开窗口</button>
+    <button id="btn1">新窗口打开窗口</button>
+    <button id="btn2">当前打开一个窗口</button>
     <script>
+
     let btn=document.getElementById("btn1");
     btn.onclick=function(){
-        window.open("http://baidu.com")
+        window.open("http://baidu.com","_blank")   //在新窗口打开一个窗口
     }
+
+    let btn2=document.getElementById("btn2");
+    btn2.onclick=function(){
+        window.open("http://baidu.com","_self")   //在当前打开一个窗口
+    }
+
     </script>
 </body>
 </html>
